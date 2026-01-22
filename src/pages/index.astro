@@ -15,6 +15,7 @@ import Layout from '../layouts/Layout.astro';
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#equipo">Nuestro Equipo</a></li>
         <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#contacto" class="btn btn-primary btn-sm mt-2">Reservar Cita</a></li>
       </ul>
     </div>
     <a href="#" class="btn btn-ghost text-xl">Salud Elche</a>
@@ -26,7 +27,7 @@ import Layout from '../layouts/Layout.astro';
       <li><a href="#contacto">Contacto</a></li>
     </ul>
   </div>
-  <div class="navbar-end">
+  <div class="navbar-end hidden lg:flex">
     <a href="#contacto" class="btn btn-primary btn-sm lg:btn-md">Reservar Cita</a>
   </div>
 </div>
@@ -36,7 +37,6 @@ import Layout from '../layouts/Layout.astro';
   <div class="hero-content flex-col lg:flex-row-reverse max-w-6xl">
     <img
       src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&q=80"
-
       class="max-w-sm rounded-lg shadow-2xl w-full lg:w-1/2"
       alt="Doctora profesional en clínica moderna"
     />
@@ -140,14 +140,16 @@ import Layout from '../layouts/Layout.astro';
 </div>
 
 <!-- Footer -->
-<footer class="footer footer-center lg:footer bg-base-300 text-base-content p-10">
-  <div class="grid grid-flow-col gap-4">
-    <a class="link link-hover">Sobre Nosotros</a>
-    <a class="link link-hover">Servicios</a>
-    <a class="link link-hover">Política de Privacidad</a>
-  </div>
-  <div>
-    <p>Copyright © 2026 - Clínica Salud Elche</p>
+<footer class="footer bg-base-300 text-base-content p-10">
+  <div class="footer-center w-full">
+    <div class="grid grid-flow-col gap-4 mb-4">
+      <a class="link link-hover">Sobre Nosotros</a>
+      <a class="link link-hover">Servicios</a>
+      <a class="link link-hover">Política de Privacidad</a>
+    </div>
+    <div>
+      <p>Copyright © 2026 - Clínica Salud Elche</p>
+    </div>
   </div>
 </footer>
 </Layout>
